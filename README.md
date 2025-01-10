@@ -10,14 +10,6 @@ The catalyst_marketing_agency project is a Flutter application designed to manag
 
 ```bash
 catalyst_marketing_agency/
-├── .dart_tool/
-├── .idea/
-├── android/
-├── build/
-├── ios/
-│   ├── Runner/
-│   ├── Runner.xcodeproj/
-│   ├── Runner.xcworkspace/
 ├── lib/
 │   ├── core/
 │   │   ├── api/
