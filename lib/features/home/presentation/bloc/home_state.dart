@@ -1,0 +1,40 @@
+part of 'home_bloc.dart';
+
+@freezed
+class HomeState with _$HomeState {
+  const factory HomeState({
+    @Default(RequestStatus.init) RequestStatus getUsersListStatus,
+    Failures? getUsersListFailures,
+    UserModel? userModel,
+    @Default(RequestStatus.init) RequestStatus createNewUserStatus,
+    Failures? createNewUserFailures,
+    CreateUserResponseModel? createUserResponseModel,
+    @Default(RequestStatus.init) RequestStatus updateUserStatus,
+    Failures? updateUserFailures,
+    UpdateUserResponseModel? updateUserResponseModel,
+    @Default(RequestStatus.init) RequestStatus deleteUserStatus,
+    Failures? deleteUserFailures,
+    DeleteUserResponseModel? deleteUserResponseModel,
+    @Default(RequestStatus.init) RequestStatus getPropertiesListStatus,
+    Failures? getPropertiesListFailures,
+    PropertyResponseModel? propertyResponseModel,
+    @Default(RequestStatus.init) RequestStatus createNewPropertyStatus,
+    Failures? createNewPropertyFailures,
+    CreateNewPropertyResponseModel? createNewPropertyResponseModel,
+    @Default(RequestStatus.init) RequestStatus updatePropertyStatus,
+    Failures? updatePropertyFailures,
+    UpdatePropertyResponseModel? updatePropertyResponseModel,
+    @Default(RequestStatus.init) RequestStatus deletePropertyStatus,
+    Failures? deletePropertyFailures,
+    DeletePropertyResponseModel? deletePropertyResponseModel,
+    @Default(RequestStatus.init) RequestStatus getBookingsDataStatus,
+    Failures? getBookingsDataFailures,
+    BookingResponseModel? bookingResponseModel,
+    @Default(RequestStatus.init) RequestStatus createNewBookingStatus,
+    Failures? createNewBookingFailures,
+    CreateNewBookingResponseModel? createNewBookingResponseModel,
+    @Default(RequestStatus.init) RequestStatus deleteBookingStatus,
+    Failures? deleteBookingFailures,
+    DeleteBookingResponseModel? deleteBookingResponseModel,
+  }) = _HomeState;
+}
